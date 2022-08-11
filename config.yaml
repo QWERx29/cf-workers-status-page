@@ -37,3 +37,9 @@ monitors:
     url: 'https://blog.cloudflare.com/'
     method: GET
     expectStatus: 200
+    
+  - id: blog-ghpages
+    name: Github Pages
+    url: 'https://qwerx29.github.com/'
+    method: GET
+    expectStatus: 200
