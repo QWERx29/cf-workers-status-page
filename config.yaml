@@ -31,12 +31,6 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
-
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
     
   - id: blog-ghpages
     name: Github Pages
@@ -47,5 +41,11 @@ monitors:
   - id: blog-vercel
     name: Vercel
     url: 'https://phantasus.vercel.app/'
+    method: GET
+    expectStatus: 200
+    
+  - id: blog-netlify
+    name: Netlify
+    url: 'https://phantasus.netlify.app/'
     method: GET
     expectStatus: 200
