@@ -1,5 +1,5 @@
 settings:
-  title: '状态'
+  title: '页面状态'
   url: '' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -37,5 +37,17 @@ monitors:
   - id: blog-cf
     name: Cloudflare Pages
     url: 'https://phantasus-2.pages.dev/'
+    method: GET
+    expectStatus: 200
+
+  - id: blog-cf-2
+    name: Cloudflare Pages - 2
+    url: 'https://phantasus.eu.org/'
+    method: GET
+    expectStatus: 200
+
+  - id: notes-cf
+    name: Notes
+    url: 'https://phantasus.edu.eu.org/'
     method: GET
     expectStatus: 200
